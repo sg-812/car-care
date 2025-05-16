@@ -1,0 +1,231 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@font-face {
+  font-family: "Righteous";
+  src: url("../font/righteous/Righteous-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aqua;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+/* ------------------common class---------------- */
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 30px;
+}
+.btn_white {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+.btn_white:hover {
+  background-color: transparent;
+  color: white;
+}
+.btn_blue {
+  border-color: #007bff;
+  background-color: transparent;
+  color: #007bff;
+}
+.btn_blue:hover {
+  background-color: #007bff;
+  color: white;
+}
+.btn_white_outline {
+  border-color: white;
+  background-color: transparent;
+  color: white;
+}
+.btn_white_outline:hover {
+  background-color: white;
+  color: black;
+}
+.section_padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.section_heading {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Righteous", sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.section_text {
+  font-size: 20px;
+  text-align: center;
+}
+.section_content {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* -------------------------common element--------------------- */
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* --------------navbar----------------- */
+.active {
+  background-color: #007bff;
+  border-radius: 30px;
+}
+.navbar {
+  background-color: rgb(0, 0, 0);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+.navbar_brand {
+  display: inline-block;
+}
+.navbar_brand a {
+  font-size: 20px;
+  font-family: "Righteous", cursive;
+  color: #fff;
+}
+.navbar_brand span {
+  font-size: 24px;
+  color: #007bff;
+  margin-left: 7px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+.nav_list {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav_list li {
+  margin-left: 25px;
+}
+.nav_list li a {
+  font-family: "Rubik", sans-serif;
+  color: #ffffffb3;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+.nav_list li a:hover {
+  color: white;
+}
+
+/* ---------------banner------------- */
+.banner {
+  height: 90vh;
+  background-image: url("../images/banner.png");
+  background-color: rgba(4, 60, 112, 0.3);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+}
+.banner .container {
+  /* background-color: aquamarine; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.banner_content {
+  max-width: 350px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  /* background-color: bisque; */
+}
+.banner_content h1 {
+  font-size: 56px;
+  font-family: "Righteous", sans-serif;
+  letter-spacing: 7px;
+  margin-bottom: 16px;
+}
+.banner_content p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+/* --------------servicep-------------------- */
+
+/* .service_content{
+    background-color: burlywood;
+} */
+.service {
+  background-color: whitesmoke;
+}
+.serviceItems .upperPart {
+  display: flex;
+  justify-content: space-between;
+}
+.item {
+  width: 30%;
+  /* background-color: blueviolet; */
+}
+.item figure {
+  padding: 10% 35%;
+}
+.item .itemText {
+  text-align: center;
+}
+.item .itemText h3 {
+  margin-bottom: 15px;
+}
+.item .itemText p {
+  line-height: 2;
+}
+
+/* about */
+.aboutUpper{
+  background-color: rgb(177, 176, 176);
+}
+.aboutLower{
+  background-color: white;
+}
+.about_text_img{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_img{
+  width:35%;
+}
+.about_text{
+  width:60%;
+}
+.mission_img{
+  order:2;
+}
+.mission_text{
+  order:1;
+}
