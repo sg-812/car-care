@@ -229,3 +229,12 @@ nav {
 .mission_text{
   order:1;
 }
+
+.footerPart{
+  background-color: navy;
+  padding:50px 0;
+}
+.footerText{
+  color:white;
+  text-align: center;
+}
